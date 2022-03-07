@@ -1,0 +1,4 @@
+﻿  Cone.cpp
+D:\Education\Education_C\Work2\firstProject\Cone\Cone.cpp(15,17): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+D:\Education\Education_C\Work2\firstProject\Cone\Cone.cpp(16,17): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+  Cone.vcxproj -> D:\Education\Education_C\Work2\firstProject\Cone\x64\Debug\Cone.exe
