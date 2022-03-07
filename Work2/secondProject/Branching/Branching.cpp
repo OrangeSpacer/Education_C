@@ -20,7 +20,7 @@ int main()
         }
     }
     else {
-        if (abs(x) >= 1) {
+        if (x*x <= a) {
             w = sqrt(a - (x * x));
             cout << "Answer w: " << w <<  endl;
         }
