@@ -4,22 +4,44 @@
 #include <fstream>
 using namespace std;
 
-int main()
-{
-    string path = "taskFile.txt";
-    ofstream fout;
+//int main()
+//{
+//    string path = "taskFile.txt";
+//    ofstream fout;
+//
+//    fout.open(path);
+//
+//
+//    if (!fout.is_open()) {
+//        cout << "Error";
+//    }
+//    
+//    else {
+//        fout << "Data";
+//    }
+//
+//    fout.close();
+//}
 
-    fout.open(path);
 
+//int main() {
+//
+//    string path = "taskFile.txt";
+//
+//    string buffer;
+//
+//    ifstream infile(path);
+//
+//    ofstream outfile(path);
+//
+//    while (infile) {
+//        getline(infile, buffer);
+//        outfile << buffer << endl;
+//    }
+//
+//    return 0;
+//}
 
-    if (!fout.is_open()) {
-        cout << "Error";
-    }
-    
-    else {
-        fout << "Data";
-    }
-
-    fout.close();
-}
+//ctrl+K ctrl+C --commit
+//ctrl-K ctrl-U
 
