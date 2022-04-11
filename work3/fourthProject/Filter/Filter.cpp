@@ -4,36 +4,59 @@
 #include <fstream>
 using namespace std;
 
-int main()
-{
+//int main()
+//{
+//    string path = "taskFile.txt";
+//    ofstream fout;
+//
+//    int Number;
+//
+//    fout.open(path);
+//
+//
+//    if (!fout.is_open()) {
+//        cout << "Error";
+//    }
+//
+//    else {
+//        fout << 5545454 << "frgreg" << 666 << endl;
+//    }
+//
+//    ifstream file(path);
+//
+//
+//    do {
+//        if (file >> Number) {
+//            cout << Number << endl;
+//        }
+//        else {
+//            file.clear();
+//            file.ignore(1, ' ');
+//        }
+//    } 
+//    while (!file.eof());
+//    fout.close();
+//}
+
+int main() {
+
     string path = "taskFile.txt";
-    ofstream fout;
 
-    int Number;
+    string buffer;
 
-    fout.open(path);
+    ifstream inFile(path);
 
 
-    if (!fout.is_open()) {
-        cout << "Error";
+    while (inFile) {
+        getline(inFile, buffer);
+
+        for (auto elem : buffer) {
+            if (elem >= 48 && elem <= 57) {
+                cout << elem << "\t";
+            }
+        }
+        cout << endl;
     }
 
-    else {
-        fout << 5545454 << "frgreg" << 666 << endl;
-    }
-
-    ifstream file(path);
-
-
-    do {
-        if (file >> Number) {
-            cout << Number << endl;
-        }
-        else {
-            file.clear();
-            file.ignore(1, ' ');
-        }
-    } 
-    while (!file.eof());
-    fout.close();
+    return 0;
 }
