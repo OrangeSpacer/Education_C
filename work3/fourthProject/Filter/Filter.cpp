@@ -52,7 +52,10 @@ int main() {
 
         for (auto elem : buffer) {
             if (elem >= 48 && elem <= 57) {
-                cout << elem << "\t";
+                cout << elem;
+            }
+            else{
+                cout << " ";
             }
         }
         cout << endl;
