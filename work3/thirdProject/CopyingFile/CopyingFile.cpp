@@ -11,6 +11,19 @@ using namespace std;
 //
 //    fout.open(path);
 //
+//    fout << "data";
+//
+//    fout.close();
+//}
+
+
+//int main()
+//{
+//    string path = "taskFile.txt";
+//    ofstream fout;
+//
+//    fout.open(path);
+//
 //
 //    if (!fout.is_open()) {
 //        cout << "Error";
