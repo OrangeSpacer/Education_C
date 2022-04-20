@@ -14,15 +14,12 @@ int main()
     cin >> n;
     
     m1 = 0;
-    for (p = 1; m1 < m; p++)
-    {
+    for (p = 1; m1 < m; p=p+0.1){
+        cout << "p: " << p << endl;
         r = p / 100;
         m1 = ((S * r * pow(1+r,n)) / (12 * (pow(1+r,n)-1)));
         if (m1 > m) {
-            cout << "Answe p: " << p*0.1 << "%" << endl;
-        }
-        else {
-            cout << "Error" << endl;
+            cout << "Answe p: " << p << "%" << endl;
         }
     }
 }
