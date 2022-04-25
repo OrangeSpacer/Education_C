@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "772e2891-5775-484f-b49f-6d0be8cd7445": {
+      "ProjectGuid": "772e2891-5775-484f-b49f-6d0be8cd7445",
+      "DisplayName": "The sign of the number",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
