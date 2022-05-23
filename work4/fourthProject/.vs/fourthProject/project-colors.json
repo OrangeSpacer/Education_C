@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "052bd413-8135-43ea-b7a4-db9e26d2375d": {
+      "ProjectGuid": "052bd413-8135-43ea-b7a4-db9e26d2375d",
+      "DisplayName": "Flag",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
