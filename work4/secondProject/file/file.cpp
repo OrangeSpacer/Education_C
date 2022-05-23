@@ -5,29 +5,28 @@
 #include <cstring>
 using namespace std;
 
-//int main()
-//{
-//    int count = 0;
-//    string path = "taskFile.txt";
-//    ofstream fout;
-//
-//    fout.open(path);
-//
-//    fout << 1345678932;
-//
-//    fout.close();
-//
-//    fout.open(path);
-//
-//    
-//    if(fout.is_open()) {
-//
-//        for (int i = 0; i < strlen(fout.data());i++) {
-//            count += fout[i];
-//        }
-//    }
-//    cout << count;
-//}
+int main() {
+	string line;
+	int count = 0;
+	string path = "taskFile.txt";
 
+	ofstream fout(path);
+	ifstream fin(path);
 
-//Задание находится в разработке!!!!!!!!!!!
+	if (fout.is_open()) {
+		fout << 134567899;
+		fout.close();
+	}
+
+	if (fin.is_open()) {
+		while (getline(fin, line)) {
+			for (int i = 0; i < strlen(line.data()); i++) {
+				count += line.data()[i] - '0';
+			}
+		}
+		fin.close();
+	}
+
+	cout << count;
+
+}
