@@ -27,7 +27,7 @@ using namespace std;
 //
 //    do {
 //        if (file >> Number) {
-//            cout << Number << endl;
+//            cout << Number;
 //        }
 //        else {
 //            file.clear();
@@ -52,10 +52,10 @@ int main() {
 
         for (auto elem : buffer) {
             if (elem >= 48 && elem <= 57) {
-                cout << elem;
+                cout << elem << " ";
             }
             else{
-                cout << " ";
+                cout << "";
             }
         }
         cout << endl;
